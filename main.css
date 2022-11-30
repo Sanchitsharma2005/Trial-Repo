@@ -190,7 +190,7 @@
   #mobile-menu {
     position: absolute;
     top: 20%;
-    right: -20%;
+    right: -15%;
     transform: translate(5%, 20%);
   }
 
