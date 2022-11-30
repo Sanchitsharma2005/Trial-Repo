@@ -1,0 +1,123 @@
+.body {
+  background-color: rgb(255, 255, 255);
+}
+
+.logo2 {
+  height: 159px;
+  border-radius: 15px;
+}
+
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+}
+.heading1{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 0);  
+  justify-content: center;
+  align-items: center;
+  
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 500px) {
+  .heading1 {
+    font-size: 40px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+  .heading1 {
+    font-size: 60px;
+    margin-top: 200px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+
+    display: flex;
+    height: 143px;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+    /* justify-content: center; */
+  }
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+
+.pulse-container {
+    width: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pulse-bubble {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+  }
+  
+  .pulse-bubble-1 {
+      animation: pulse .4s ease 0s infinite alternate;
+  }
+  .pulse-bubble-2 {
+      animation: pulse .4s ease .2s infinite alternate;
+  }
+  .pulse-bubble-3 {
+      animation: pulse .4s ease .4s infinite alternate;
+  }
+  @keyframes pulse {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: .25;
+      transform: scale(.75);
+    }
+  }
+  .sticky__footer {
+    /* background-color: var(--darker-bg); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    height: 10px;
+    width: 100%;
+  }
+
+  /* @media screen and (min-width: 500px) {
+    .spinner-box 
+    .sticky__footer {
+      padding: 2px;
+      height: 20px;
+      width: 10%;
+    }
+  }
+  
+
+  @media screen and (max-width: 1000px) {
+    .spinner-box 
+    .sticky__footer{
+      padding: 2px;
+      height: 20px;
+      width: 10%;
+    }
+  } */
+  
