@@ -13,8 +13,8 @@
   
   :root {
 	--main-accent: #ffffff;
-	--main-bg: #000000;
-	--darker-bg: #ff0000;
+	--main-bg: rgb(23, 23, 23);
+	--darker-bg: #787475;
 	--secondary: #e5ff00;
   }
   /* Scrollbar */
@@ -240,14 +240,19 @@
 	cursor: pointer;
   }
   
-  .home__section p {
+  .home__section h3 {
 	color: rgb(255, 255, 255);
-	/* opacity: 70%; */
 	font-weight: 600;
-	/* line-height: 150%; */
-	/* margin-top: 15px; */
-	justify-content: center;
-	align-items: center;
+  }
+
+  
+  .typing {
+	/* color: #ff0000; */
+	color: #ffc100;
+  }
+  .Jsauto {
+	font-size: 35px;
+	padding-top: 15px;
   }
   
   .social__icons {
