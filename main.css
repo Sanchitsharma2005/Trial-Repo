@@ -154,13 +154,28 @@
 	}
   
 	.navbar__menu.active {
-	  background: #ffffff;
-	  top: 100%;
+		top: 100%;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 99;
+		width: 50%;
+		float: left;
+		margin-left: 141px;
+		height: 50vh;
+	
+	  background: #000000;
+	  /* top: 100%;
 	  opacity: 1;
 	  transition: all 0.5s ease;
 	  z-index: 99;
-	  height: 60vh;
+	  height: 60vh; */
 	  font-size: 1.6rem;
+    border-radius: 10px;
+	border: 2px solid #000000;
+	border: 0.1px solid #ffffff;
+	/* background-color: #18181B; */
+	box-shadow: 0 4px 8px O rgb(255, 255, 255), 0 6px 20px 0
+				  rgba(e, 0, 0, 0.19);
 	}
   
 	#navbar__logo {
@@ -188,13 +203,13 @@
   
 	#mobile-menu {
 	  position: absolute;
-	  top: 20%;
-	  right: 5%;
+	  top: 10%;
+	  right: 3%;
 	  transform: translate(5%, 20%);
 	}
   
 	.navbar__toggle .bar {
-	  display: block;
+	  display: flex;
 	  cursor: pointer;
 	}
   
@@ -278,7 +293,7 @@
 	  font-size: 30px;
 	  font-weight: 800;
 	}
-	.home__section p {
+	.home__section h3 {
 	  font-size: 0.8rem;
 	}
   
@@ -297,7 +312,7 @@
 	.home__section h1 {
 	  font-size: 25px;
 	}
-	.home__section p {
+	.home__section  h3{
 	  font-size: 0.8rem;
 	}
   
@@ -307,3 +322,7 @@
 	}
   }
   
+.about{
+	height: 100vh;
+	background-color: #ffc100;
+}

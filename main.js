@@ -1,4 +1,3 @@
-
 // typed js
 const typed = new Typed(".typing", {
 	strings: ["Trader.","Learner.", "Web Developer."],
@@ -7,19 +6,46 @@ const typed = new Typed(".typing", {
 	backSpeed: 40,
   });
   
-const sr = ScrollReveal ({
-	distance: '45px',
-	duration: 2700,
-	reset: true
-})
-
-sr.reveal('.home-text',{delay:350, origin:'left'})
-sr.reveal('.home-img',{delay:350, origin:'right'})
-
-sr.reveal('.Home,.about,.team',{delay:200, origin:'bottom'})
-
-
+  // Theme changer
+  const themes = [
+	"#FFDB58",
+	"#008080",
+	"#9affe1",
+	"#abff9a",
+	"#ff9a9a",
+	"#f5ff9a",
+	"#9aadff",
+	"#ffd280",
+	"#adff6b",
+	"#6bfaff",
+	"#55F7DD",
+	"#7BF774",
+	"#F770F4",
+	"#E2F780"
+  ];
+  const root = document.querySelector(":root");
+  const themeToggle = document.querySelector("#main-name");
+  let currentTheme = 0;
   
+  const changeTheme = () => {
+	currentTheme++;
+	if (currentTheme == themes.length) {
+	  currentTheme = 0;
+	}
+	root.style.setProperty("--main-accent", themes[currentTheme]);
+  };
+  themeToggle.addEventListener("click", () => {
+	changeTheme();
+  });
+  
+  let scrolling = false;
+  window.addEventListener("scroll", () => {
+	if (!scrolling) {
+	  changeTheme();
+	  scrolling = true;
+	  setTimeout(() => (scrolling = false), 5000);
+	}
+  });
   
   const hamburger = document.querySelector("#mobile-menu");
   const tabs = document.querySelector(".navbar__menu");
@@ -29,6 +55,25 @@ sr.reveal('.Home,.about,.team',{delay:200, origin:'bottom'})
 	tabs.classList.toggle("active");
   };
   
+  hamburger.addEventListener("click", mobileMenu);
+  
+  // experience projects toggle
+  const exp = document.querySelector("#exp__btn");
+  const prj = document.querySelector("#prj__btn");
+  
+  prj.addEventListener("click", function () {
+	prj.classList.add("active__btn");
+	exp.classList.remove("active__btn");
+	document.querySelector("#projects").classList.remove("noshow");
+	document.querySelector("#experience").classList.add("noshow");
+  });
+  
+  exp.addEventListener("click", function () {
+	exp.classList.add("active__btn");
+	prj.classList.remove("active__btn");
+	document.querySelector("#experience").classList.remove("noshow");
+	document.querySelector("#projects").classList.add("noshow");
+  });
   
   //highlight active menu
   const navLogo = document.querySelector("#navbar__logo");
@@ -84,3 +129,8 @@ sr.reveal('.Home,.about,.team',{delay:200, origin:'bottom'})
   tabs.addEventListener("click", hideMobileMenu);
   navLogo.addEventListener("click", hideMobileMenu);
   
+
+sr.reveal('.home-text',{delay:350, origin:'left'})
+sr.reveal('.home-img',{delay:350, origin:'right'})
+
+sr.reveal('.Home,.about,.team',{delay:200, origin:'bottom'})
