@@ -151,6 +151,7 @@
 	  opacity: 1;
 	  transition: all 0.5s ease;
 	  z-index: -1;
+	  justify-content: center;
 	}
   
 	.navbar__menu.active {
@@ -158,9 +159,9 @@
 		opacity: 1;
 		transition: all 0.5s ease;
 		z-index: 99;
-		width: 50%;
+		width: 44%;
 		float: left;
-		margin-left: 141px;
+		margin-left: 174px;
 		height: 50vh;
 	
 	  background: #000000;
