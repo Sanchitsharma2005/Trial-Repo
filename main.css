@@ -326,3 +326,17 @@
 	height: 100vh;
 	background-color: #ffc100;
 }
+
+@media screen and (max-width: 768px) {
+	.about{
+		height: 100vh;
+		background-color: #ffc100;
+	}
+  }
+  
+  @media screen and (max-width: 400px) {
+	.about{
+		height: 100vh;
+		background-color: #ffc100;
+	}
+  }
