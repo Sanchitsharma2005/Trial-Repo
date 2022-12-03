@@ -81,6 +81,12 @@ a {
   height: 50px;
 }
 
+.logo{
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
 .navbar__links {
   color: #fff;
   display: flex;
@@ -93,12 +99,12 @@ a {
   transition: all 0.3s ease;
 }
 
-.sub-icons{
+.sub-icons {
   padding-right: 4px;
 }
 .highlight {
-    border-bottom: 2px solid var(--main-accent);
-  }
+  border-bottom: 2px solid var(--main-accent);
+}
 .navbar__links:hover {
   color: var(--main-accent);
   transform: translateY(-4px);
@@ -212,7 +218,7 @@ a {
   letter-spacing: -1px;
   margin-bottom: 5px;
   transition: 0.3s ease;
-  font-family: 'Raleway Dots', cursive;
+  font-family: "Raleway Dots", cursive;
 }
 
 .home__section h1:hover {
@@ -226,7 +232,7 @@ a {
   color: rgb(255, 255, 255);
   /* opacity: 70%; */
   font-weight: 600;
-  font-family: 'Raleway Dots', cursive;
+  font-family: "Raleway Dots", cursive;
   line-height: 150%;
   margin-top: 15px;
   font-size: 30px;
@@ -236,10 +242,16 @@ a {
   color: #ffbf00;
 }
 
-.btn{
+.btn {
   padding-top: 35px;
 }
-.button{
+
+.btn:hover{
+  color: var(--main-accent);
+  transform: translateY(-2px);
+}
+
+.button {
   background-color: #000000;
   color: white;
   padding: 12px;
@@ -253,14 +265,15 @@ a {
   padding: 10px; */
 }
 
-.button:hover{
-  background-color:rgb(48, 46, 46);
+.button:hover {
+  background-color: rgb(48, 46, 46);
   box-sizing: border-box;
   border: 2px solid white;
   border-radius: 10px;
   padding: 12px;
   color: #fff;
   cursor: pointer;
+
 }
 
 /* .social__icons {
@@ -283,12 +296,11 @@ a {
 
 @media screen and (max-width: 768px) {
   .home__section h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .home__section p {
-    font-size: 0.8rem;
+    font-size:16px;
     margin-top: 1px;
-
   }
 
   .social__icons {
@@ -298,17 +310,26 @@ a {
   #navbar__logo {
     font-size: 90%;
   }
-  .btn{
-    padding-top: 10px;
-    }
+  .btn {
+    padding-top: 20px;
+  }
 
-  .button{
+  .button {
     background-color: #000000;
     color: white;
     padding: 7px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px #888888;
+    font-size: 11px;
+  }
+  .button:hover{
+    background-color: rgb(48, 46, 46);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #888888;
     font-size: 7px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -318,7 +339,6 @@ a {
   .home__section p {
     font-size: 0.8rem;
     margin-top: 1px;
-
   }
 
   .social__icons {
@@ -326,16 +346,23 @@ a {
     width: 140px;
   }
 
-  .btn{
-  padding-top: 10px;
+  .btn {
+    padding-top: 10px;
   }
-  .button{
-  background-color: #000000;
-  color: white;
-  padding: 7px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 10px 1px #888888;
-  font-size: 7px;
+  .button {
+    background-color: #000000;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #888888;
+    font-size: 7px;
   }
-}
+  .button:hover{
+    background-color: rgb(48, 46, 46);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #888888;
+    font-size: 7px;
+  }
 }
